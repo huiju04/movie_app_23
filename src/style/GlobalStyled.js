@@ -16,6 +16,10 @@ export const GlobalStyled = createGlobalStyle`
     body{
         /* font-family: 'Noto Sans KR', sans-serif; */
         background-color: ${MainColors.blackColor};
+        color: white;
+        letter-spacing: -1px;
+        word-break: break-all;
+        /* => 단어 별로 줄바꿈 처리 100%아님*/
     }
 
     ul, li {
@@ -24,6 +28,6 @@ export const GlobalStyled = createGlobalStyle`
 
     a{
         text-decoration: none;
-        color: white;
+        color: "white";
     }
 `;
