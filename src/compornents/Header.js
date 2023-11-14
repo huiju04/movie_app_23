@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { routes } from "../routes";
+import styled from "styled-components";
 
 const SHeader = styled.header`
   width: 100%;
@@ -29,7 +29,7 @@ const Menu = styled.ul`
   font-size: 18px;
   font-weight: 600;
   li {
-    margin-left: 30px;
+    margin-left: 60px;
   }
 `;
 
@@ -37,7 +37,7 @@ export const Header = () => {
   return (
     <SHeader>
       <Logo>
-        <Link to={routes.home}>Movie</Link>
+        <Link to={routes.home}>MOVIE</Link>
       </Logo>
 
       <Menu>

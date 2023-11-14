@@ -2,9 +2,9 @@
 
 ## 설치 항목
 
-- [] styled-components : npm install styled-components
+- [x] styled-components : npm install styled-components
 - [x] react-router-dom : npm install react-router-dom
-- [] 스타일 리셋
+- [x] 스타일 리셋
 - [] 폼 관련
 - [] 타이틀관련
 - [] 폰트어썸 관련

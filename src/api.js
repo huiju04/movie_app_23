@@ -1,16 +1,16 @@
 const fetch = require("node-fetch");
 
-const url = "https://api.themoviedb.org/3/";
+const baseUrl = "https://api.themoviedb.org/3/";
+const nowPlayingUrl = baseUrl + "movie/now_playing" + "?language=ko-kr";
+
 const options = {
   method: "GET",
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNjAwYjM3ODY4MjZiZTFiNTM3MTlkYzNhNTBhZGEwNiIsInN1YiI6IjY1NGIzYTEyMjg2NmZhMDBmZTAxNzJmMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HjrE_fe9gdJfjK8rCyxw-aoZ47zBKGjNQcE1c-PD9Ok",
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZjMzMzA4YTJmMGJiMTY0ZTJhZDEwNTE0YWIzMDg2ZiIsInN1YiI6IjYwMmY2YjZiNjRmNzE2MDA0MDU2MjYwNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JE4tOx9I0MNBy3X-AGsUPZztvJTSo5edEt8HHbIY8go",
   },
 };
 
-fetch(url, options)
-  .then((res) => res.json())
-  .then((json) => console.log(json))
-  .catch((err) => console.error("error:" + err));
+export const nowPlaying = () =>
+  fetch(nowPlayingUrl, options).then((res) => res.json());
