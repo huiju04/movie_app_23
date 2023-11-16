@@ -37,7 +37,7 @@ export const Header = () => {
   return (
     <SHeader>
       <Logo>
-        <Link to={routes.home}>MOVIE</Link>
+        <Link to={routes.home}>PNfliex</Link>
       </Logo>
 
       <Menu>
