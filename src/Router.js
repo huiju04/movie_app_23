@@ -3,8 +3,8 @@ import { routes } from "./routes";
 import { Home } from "./pages/home/Home";
 import { Detail } from "./pages/detail/Detail";
 import { Search } from "./pages/search/Search";
-import { Header } from "./compornents/Header";
-import { Footer } from "./compornents/Footer";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { PageNotFound } from "./pages/PageNotFound";
 const Router = () => {
   return (
