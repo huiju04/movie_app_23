@@ -37,7 +37,9 @@ export const Header = () => {
   return (
     <SHeader>
       <Logo>
-        <Link to={routes.home}>PNfliex</Link>
+        <Link to={routes.home} style={{ color: "#D10000" }}>
+          MOVIE
+        </Link>
       </Logo>
 
       <Menu>
